@@ -10,9 +10,11 @@
      
      <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
      
-	 <script type="text/javascript" src="js/home_super_scripts.js"></script>
+     <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	 <script type="text/javascript" src="js/scripts.js"></script>
+     
      <script type="text/javascript">
-          jQuery(document).ready(function($){
+          $(document).ready(function($){
               
           });
      </script>
@@ -23,25 +25,45 @@
 	</head>
 	<body>
 	  <div class="container">
-  	  <header>   
+  	  <header> 
+      	<div id="pearson_learn">
+            <div class="inner">
+                <span class="pearson_name">Pearson</span>
+                <span class="always_learn">Always Learning</span>
+            </div>    
+        </div>  
   	    <div class="inner">
         	<div id="logo"></div>
+            <div class="title_container">
+                <h1 id="title">Fluent</h1>
+                <div id="sub_title">
+                    <h2>The Web Platform</h2>
+                    <p>San Francisco, CA</p>
+                </div>
+            </div>
       		<nav>
           		<ul>
-              		<li><a href="/">Home</a></li>
-      	        	<li><a href="/about">section one</a></li>
-              		<li><a href="/cv">section two</a></li>
-              		<li><a href="/blog">section three</a></li>
-              		<li><a href="/blog">section four</a></li>
+              		<li><a class="scrollto" href="#header">Home</a></li>
+      	        	<li><a class="scrollto" href="#section_one">section one</a></li>
+              		<li><a class="scrollto" href="#section_two">section two</a></li>
+              		<li><a class="scrollto" href="#section_three">section three</a></li>
+              		<li><a class="scrollto" href="#section_four">section four</a></li>
           		</ul>
       		</nav>
     		</div>
   		</header>
+        
+        <main id="main_container inner">
+        	
+        </main>
+        
   		<footer>
-      		<ul>
-          		<li><a href="mailto:hanieel.rodriguez@pearson.com">email</a></li>
-          		<li>c. 2015 </li>
-  			</ul>
+            <div class="inner">
+                <ul>
+                    <li><a href="mailto:hanieel.rodriguez@pearson.com">email</a></li>
+                    <li>c. 2015 </li>
+                </ul>
+            </div>    
   		</footer>
 		</div><!-- /.container -->
 	</body>
