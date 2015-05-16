@@ -1,6 +1,6 @@
 // JavaScript Document
 
-jQuery(document).ready(function($){
+$(document).ready(function($){
 	
 	
 	 // General Lighbox close
@@ -31,22 +31,18 @@ jQuery(document).ready(function($){
         });
     });
 
-    //postion: sticky;  
-    /*
-    var stickyNavTop = $('header nav').offset().top;
-    var stickyNav = function(){  
-    var scrollTop = $(window).scrollTop();  
-        if (scrollTop > stickyNavTop) {   
-            $('header nav').addClass('sticky');
-        } else {  
-            $('header nav').removeClass('sticky');
-        }  
-    };  
-    stickyNav();  
-    $(window).scroll(function() {  
-        stickyNav();  
-    });
-    */
+    //sticky NAV for vertical pages
+		$(window).scroll(function() {
+			 var header = $(document).scrollTop();
+		 
+			 if (header > 100 ) { // Change this number to the amount you want to scroll before the header sticks
+				  $('header').addClass('sticky');
+				 
+			 } else {
+				  $('header').removeClass('sticky');
+				  
+			 }
+		});
 	
 	
 	
