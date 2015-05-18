@@ -323,6 +323,10 @@ main.pad_top {
 	padding-bottom: 28px;
 }
 
+.section_area .entry .sessions_container:last-child {
+	border-bottom: none;
+}
+
 .section_area .entry .entry_content_area {
 	padding:0px 0px 0px 30px;
 }
