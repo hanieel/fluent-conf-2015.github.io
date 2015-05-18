@@ -103,10 +103,10 @@ header.sticky {
   position: fixed; 
   top:0; 
   /*opacity:.70;*/ 
-  transition: height 0.5s ease; 
+  transition: height 0.35s ease; 
 
   box-shadow: 0px -1px 27px #000; 
-  height:60px; 
+  height:88px; 
   line-height:0px;
 }
 
@@ -117,16 +117,27 @@ header h1#title {
   margin: 15px 0px;	
   color:#000;
   font-family:"Century Schoolbook L", Baskerville, "Palatino Linotype", Palatino,  "Times New Roman", serif
+   transition: all 0.35s ease; 
 }
 
-#logo {
+header.sticky h1#title {
+	  font-size: 48px;
+  margin: 8px 0px;
+}
+
+header #logo {
 	background:url('../images/orm_branding_logo.png') no-repeat;
 	display:block;
 	width:129px;
 	height:22px;
+	 transition: all 0.35s ease; 
 }
 
-#pearson_learn {
+header.sticky #logo {
+	
+}
+
+header #pearson_learn {
 	    display: block;
   width: 100%;
   background: #f8901f;
@@ -134,85 +145,168 @@ header h1#title {
   margin-bottom: 20px;
   line-height: 26px;
   border-bottom: 1px solid #029898;
+   transition: all 0.35s ease; 
 }
 
-#pearson_learn span.pearson_name {
+header.sticky #pearson_learn {
+	
+	
+}
+
+header #pearson_learn span.pearson_name {
 	display:block;
 	float:left;
 	  text-transform: uppercase;
+	   transition: all 0.35s ease; 
 }
 
-#pearson_learn span.always_learn {
+header.sticky #pearson_learn span.pearson_name {
+	
+	
+}
+
+header #pearson_learn span.always_learn {
 	display:block;
 	float:right;
+	 transition: all 0.35s ease; 
 }
 
-#sub_title {
+header.sticky #pearson_learn span.always_learn {
+	
+}
+
+header #sub_title {
 	  display: block;
   float: right;
   margin-top: 74px;
   margin-left: 34px;
+   transition: all 0.35s ease; 
 }
 
-#sub_title h2 {
+header.sticky #sub_title {
+	line-height: 16px;
+  margin-top: -5px;
+}
+
+header #sub_title h2 {
 	  color: #000;
   font-size: 24px;
   text-transform: uppercase;
+   transition: allt 0.35s ease; 
 }
 
-#sub_title p {
+header.sticky #sub_title h2 {
+  font-size: 15px;
+}
+
+header #sub_title p {
 	  font-size: 24px;
 	   text-transform: uppercase;
+	    transition: all 0.35s ease; 
 }
 
-.title_container {
+header.sticky #sub_title p {
+	  font-size: 15px;
+}
+
+header .title_container {
 float:left;
 display:block;	
   margin-bottom: 43px;
     margin-left: 10%;
+	 transition: all 0.35s ease; 
+}
+
+header.sticky .title_container {
+	  margin-left: 15%;
+  margin-top: -24px;
+	  margin-bottom: 17px;
 }
 
 
-nav {
+header nav {
     display: Block;
   width: 71%;
   clear: both;
   /* float: left; */
   /* margin-top: 30px; */
   margin: 0px auto;
+    line-height: 15px;
+   transition: all 0.35s ease; 
+   
 }
 
-nav ul li {
+header.sticky nav {
+	
+}
+
+header nav ul li {
 	display:block;
 	float:left;
 	padding:0px 20px;
-	border-right:1px solid #fff;
+	border-right:1px solid rgba(255, 255, 255, 0.23);
+	 transition: all 0.35s ease; 
 }
 
-nav ul li:last-child {
+header.sticky nav ul li {
+	
+}
+
+header nav ul li:last-child {
 	border-right:none;
 	padding-right:0px;
 	
 }
 
-nav ul li a {
+header nav ul li a {
 color:#fff;	
 text-decoration:none;
 text-transform:uppercase;
 font-size:16px;
+transition: all 0.35s ease; 
 }
 
-nav ul li a:hover {
-	text-decoration:underline;
+header.sticky nav ul li a {
+	font-size:14px;
+	
+}
+
+header nav ul li a:hover {
+	color:#000;
 }
 
 /***********************Content****************************/
 
 main {
 display:block;
-min-height:1000px;	
+min-height:3000px;	
 }
 
+.section_area {
+display:block;
+width:100%;	
+}
+
+.section_area .entry {
+	padding:20px 30px;
+}
+
+.section_area .entry h1 {
+	display:block;
+	font-size:20px;
+	color:#00b7b7;
+	margin-bottom:20px;
+}
+
+.section_area .entry h2 {
+	display:block;
+	font-size:18px;
+	margin-bottom:20px;
+}
+
+.section_area .entry p {
+	margin-bottom:20px;
+}
 
 /******  FOR SUBMIT BTN (SAFARI)	-webkit-appearance: none;   *****/
 
