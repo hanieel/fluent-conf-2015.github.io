@@ -4,7 +4,7 @@
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp, strike, 
+del, dfn, img, ins, kbd, q, s, samp, strike, 
 sub, sup, tt, var, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
@@ -53,7 +53,27 @@ iframe {
 	margin:20px auto;
 	display:block;
 	text-align:center;	
+}
 
+a {
+	  color: #00b7b7;
+	  text-decoration:none;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+
+
+@font-face {
+  font-family: 'fontello';
+  src: url('../font/fontello.eot?55700914');
+  src: url('../font/fontello.eot?55700914#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff?55700914') format('woff'),
+       url('../font/fontello.ttf?55700914') format('truetype'),
+       url('../font/fontello.svg?55700914#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 /***************************************************/
@@ -278,7 +298,7 @@ header nav ul li a:hover {
 
 main {
 	display:block;
-	min-height:3000px;
+	min-height:2000px;
 	line-height: 19px;
 	padding:30px 0px 20px;
 }
@@ -297,11 +317,33 @@ main.pad_top {
     border-bottom: 1px solid rgba(0, 183, 183, 0.29);
 }
 
+.section_area .entry .sessions_container {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	margin-bottom: 34px;	
+	padding-bottom: 28px;
+}
+
+.section_area .entry .entry_content_area {
+	padding:0px 0px 0px 30px;
+}
+
+.section_area .entry .entry_content_area .my_notes p {
+	color: #f8901f;
+	font-style: italic;
+	padding:0px 40px;
+	margin-bottom:30px;
+}
+
+.section_area .entry .entry_content_area .resources_link h4 {
+	display: block;
+	margin-top: 11px;	
+}
+
 .section_area .entry h1 {
 	display: block;
 	font-size: 25px;
 	color: #00b7b7;
-	margin-bottom: 28px;
+	margin-bottom: 40px;
 	margin-top: 20px;
 }
 
@@ -309,6 +351,26 @@ main.pad_top {
 	display:block;
 	font-size:18px;
 	margin-bottom:20px;
+}
+
+.section_area .entry h2 span {
+	color: #00b7b7;
+}
+
+.section_area .entry h2 span:before {
+	content: '\e800';
+  font-family: 'fontello';
+  display: block;
+  color: #f8901f;
+  float: left;
+  margin-right: 10px;
+}
+
+.section_area .entry h3 {
+	display:block;
+	font-size:16px;
+	color: #00b7b7;
+	margin-bottom:2px;
 }
 
 .section_area .entry p {
