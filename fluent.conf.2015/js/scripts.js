@@ -32,19 +32,38 @@ $(document).ready(function($){
     });
 
     //sticky NAV for vertical pages
-		$(window).scroll(function() {
-			 var header = $(document).scrollTop();
+		//$(window).scroll(function() {
+			 //var header = $(document).scrollTop();
 		 
-			 if (header > 100 ) { // Change this number to the amount you want to scroll before the header sticks
-				  $('header').addClass('sticky');
+			 //if (header > 281 ) { // Change this number to the amount you want to scroll before the header sticks
+				//  $('header').addClass('sticky');
 				 
-			 } else {
-				  $('header').removeClass('sticky');
+			// } else {
+				//  $('header').removeClass('sticky');
 				  
-			 }
-		});
+			// }
+		//});
 	
-	
+	var  mn = $("header");
+    mns = "sticky";
+    hdr = $('header').height();
+
+$(window).scroll(function() {
+  if( $(this).scrollTop() > hdr ) {
+    mn.addClass(mns);
+  } else {
+    mn.removeClass(mns);
+  }
+  
+  if ($('header').hasClass('sticky')) {
+		$('main').addClass('pad_top');
+		
+	} else {
+		$('main').removeClass('pad_top');
+	}
+  
+  
+});
 	
 	
 	

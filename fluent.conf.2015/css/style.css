@@ -279,7 +279,13 @@ header nav ul li a:hover {
 
 main {
 display:block;
-min-height:3000px;	
+min-height:3000px;
+  line-height: 19px;
+  padding:30px 0px 20px
+}
+
+main.pad_top {
+  padding: 443px 0px 0px;	
 }
 
 .section_area {
@@ -292,10 +298,11 @@ width:100%;
 }
 
 .section_area .entry h1 {
-	display:block;
-	font-size:20px;
-	color:#00b7b7;
-	margin-bottom:20px;
+	  display: block;
+  font-size: 25px;
+  color: #00b7b7;
+  margin-bottom: 28px;
+  margin-top: 20px;
 }
 
 .section_area .entry h2 {
