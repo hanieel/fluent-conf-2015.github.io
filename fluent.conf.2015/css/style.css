@@ -397,6 +397,13 @@ main.pad_top {
 	padding:0px 0px 0px 30px;
 }
 
+.section_area .entry .entry_content_area ul {
+	list-style: disc;
+	margin-left: 29px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
 .section_area .entry .entry_content_area .my_notes p {
 	color: #f8901f;
 	font-style: italic;
