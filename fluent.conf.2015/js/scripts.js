@@ -57,9 +57,11 @@ $(window).scroll(function() {
   
   if ($('header').hasClass('sticky')) {
 		$('main').addClass('pad_top');
+		$('#header_image').addClass('hide');
 		
 	} else {
 		$('main').removeClass('pad_top');
+		$('#header_image').removeClass('hide');
 	}
   
   
